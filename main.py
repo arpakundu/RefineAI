@@ -3,11 +3,11 @@ import textwrap
 import time
 import sys
 
-# 1. SETUP - Use your API key
-API_KEY = "AIzaSyCQG59A4sIuq76WVobRksPe6v9amLJEcGM"
+# 1. SETUP
+API_KEY = "USE YOUR OWN API KEY"
 genai.configure(api_key=API_KEY)
 
-# Using the stable alias found in your list
+# Using the stable alias found in the list
 MODEL_NAME = 'models/gemini-flash-latest'
 model = genai.GenerativeModel(MODEL_NAME)
 
@@ -55,7 +55,7 @@ def run_demonstration():
         print(analysis)
         return
 
-    # Check if the AI thinks it's BAD
+    # Checking if the AI thinks it's BAD
     if "RATING: BAD" in analysis.upper():
         print("\n⚠️  WARNING: POOR PROMPT DETECTED")
 
@@ -88,5 +88,5 @@ def run_demonstration():
         print(textwrap.fill(final_answer, width=80))
     print("="*50)
 
-# Start the system
+# Starting the system
 run_demonstration()
