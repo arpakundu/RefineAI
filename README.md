@@ -1,4 +1,4 @@
-# 🌟 RefineAI: Automated Prompt Enhancement System 🌟
+# 🌟 RefineAI: Automated Prompt Enhancement System
 
 An AI-powered system that analyzes user prompts, detects vague inputs, automatically refines them, and generates high-quality responses using **Google AI Studio**.
 
